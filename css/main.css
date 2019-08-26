@@ -1,0 +1,88 @@
+@font-face {
+	font-family:"Ageone";
+	src:url("../font/Ageone.eot?") format("eot"),
+		url("../font/Ageone.woff") format("woff"),
+		url("../font/Ageone.ttf") format("truetype"),
+		url("../font/Ageone.svg#Ageone") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+body{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	/*background-color: rgba(35, 43, 50,1);*/
+}
+*{
+	font-family: ageone;
+}
+::-webkit-scrollbar{
+	opacity: 0;
+}
+div.head{
+	top: 0;
+	font-size: 25px;
+	text-align: center;
+	line-height: 2em;
+	width: 103%;
+	color: white;
+	letter-spacing: 5px;
+	position:sticky;
+	background-color: rgba(35, 43, 50,1);
+	transition-duration: 400ms;
+}
+div.head a{
+	text-decoration: none;
+	color: inherit;
+}
+div.head:hover{
+	letter-spacing: 1px;
+}
+div.b_white{
+	background-color: white;
+	color: black;
+	width: 102%;
+	height: 500px;
+}
+div.b_one{
+	background-color: rgb(255, 82, 82);
+	width: 75%;
+	height: 500px;
+	margin-left:auto;
+	margin-right: auto;
+	align-content: center;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+div.b_two{
+	background-color: rgb(41,98,255);
+	width: 75%;
+	height: 500px;
+	margin-left:auto;
+	margin-right: auto;
+	/*margin: 100px 200px;*/
+	color: white;
+	text-align: center;
+	vertical-align: center;
+}
+footer{
+	bottom: 0;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	font-size: 25px;
+	position: relative;
+	text-align: center;
+	line-height: 2em;
+	width: 103%;
+	height: 10em;
+	color: white;
+	letter-spacing: 5px;
+	background-color: rgba(35, 43, 50,1);
+	transition-duration: 400ms;
+	margin-bottom: 0;
+}
