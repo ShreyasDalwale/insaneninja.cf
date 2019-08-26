@@ -92,6 +92,8 @@ footer{
     background-color: lightblue;
   }
   div.head{
-  	font-size: 5px;
+  	font-size: 15px;
+  	height: 40px;
+  	line-height: 40px;
   }
 }
