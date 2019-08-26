@@ -86,3 +86,12 @@ footer{
 	transition-duration: 400ms;
 	margin-bottom: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  div.head{
+  	font-size: 15px;
+  }
+}
