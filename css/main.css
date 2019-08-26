@@ -21,7 +21,7 @@ body{
 	font-family: ageone;
 }
 ::-webkit-scrollbar{
-	opacity: 0;
+	opacity: 1;
 }
 div.head{
 	top: 0;
@@ -39,17 +39,28 @@ div.head a{
 	text-decoration: none;
 	color: inherit;
 }
+
 div.head:hover{
 	letter-spacing: 1px;
+}
+div.head div.menu div{
+	width: 30px;
+	height: 2px;
+	padding: 1px;
+	margin-top: 5px;
+	background-color: white;
+	border-radius: 5px;
+
 }
 div.b_white{
 	background-color: white;
 	color: black;
 	width: 100%;
-	height: 500px;
+	height: 350px;
 }
 div.b_one{
 	background-color: rgb(255, 82, 82);
+	background-image: linear-gradient(140deg,rgba(255,255,255,0.2),rgba(255, 82, 82,1));
 	width: 75%;
 	height: 500px;
 	margin-left:auto;
@@ -79,21 +90,80 @@ footer{
 	text-align: center;
 	line-height: 2em;
 	width: 100%;
-	height: 10em;
+	height: 17%;
 	color: white;
 	letter-spacing: 5px;
 	background-color: rgba(35, 43, 50,1);
 	transition-duration: 400ms;
 	margin-bottom: 0;
+	overflow:hidden;
 }
+footer div.foot{
+	display: inline-block;
+
+	/*border: 1px solid white;*/
+	/*background-image: linear-gradient(rgb(35,43,50),rgb(52, 64, 73),rgb(35,43,50));*/
+	/*background-color: rgba(52, 64, 73,1);*/
+	width: 30%;
+	height: 350px;
+	overflow: hidden;
+}
+footer p{
+	font-size: 14px;
+}
+div.menuopen div.head{
+	position: fixed;
+}
+ div.menuopen{
+  	z-index: 500;
+  	width: 30%;
+  	height: 100%;
+  	background-color: rgba(255,255,255,0.7);
+  	position: fixed;
+  	display: none;
+  }
+  footer div.foot p{
+  	line-height: 1em;
+  	font-size: 12px
+  }
 
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: rgba(35, 43, 50,1);
   }
   div.head{
   	font-size: 15px;
   	height: 40px;
   	line-height: 40px;
   }
+  div.b_one{
+  	width: 100%;
+  	height: 500px;
+  }
+  div.b_two{
+  	width: 100%;
+  	height: 500px;
+  }
+  footer{
+  	margin-top: 0px;
+  	height:300px;	
+  }
+  footer div.foot{
+  	height: 180px;
+  	font-size: 12px;
+
+  }
+  footer div.foot p{
+  	line-height: 1em;
+  	font-size: 12px
+  }
+  div.menuopen{
+  	z-index: 500;
+  	width: 85%;
+  	height: 100%;
+  	background-color: rgba(255,255,255,0.7);
+  	position: fixed;
+  	display: none;
+  }
+ 
 }
