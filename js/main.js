@@ -1,3 +1,7 @@
+var totalCase = 0;
+var totalCured = 0;
+var totalDeceased = 0;
+
 function onLoad() {
 	
 	// var dataJ;
@@ -51,10 +55,8 @@ function onLoad() {
 	// }
 
 }
+
 function postAction(data) {
-	var tc = document.getElementById("totalCases").innerHTML;
-	var td = document.getElementById("totalD").innerHTML;
-	var cc = document.getElementById("totalC").innerHTML;
 	var states = [	'andaman and nicobar islands','andhra pradesh',
 					'arunachal pradesh','assam','bihar','chandigarh',
 					'chhattisgarh','delhi','goa','gujarat','haryana',
@@ -66,13 +68,11 @@ function postAction(data) {
 					'west bengal'
 				];
 
-	var totalCases = 0;
-	var totalCured = 0;
-	var totalDeceased = 0;
+	
 	console.log(data);
 
 	for (var i = 0; i < states.length; i++) {
-		totalCases = totalCases + parseInt(data[states[i]]['total']);
+		totalCase = totalCase + parseInt(data[states[i]]['total']);
 		// console.log(totalCases,i);
 	}
 
@@ -86,10 +86,27 @@ function postAction(data) {
 		// console.log(totalCases,i);
 	}
 
-	tc = tc+totalCases;
-	td = td+totalDeceased;
-	cc = cc+totalCured;
-	console.log(tc,totalCases,td,totalDeceased,cc,totalCured);
+	update();
 	// console.log("In 2 :",Object.keys(data['assam']).length);
 	
+}
+function update(){
+	
+	var one = document.createElement("h3")
+	var two = document.createElement("h3")
+	var three = document.createElement("h3")
+
+	one.innerHTML= "Total Cases: "+totalCase;
+	document.body.appendChild(one);
+
+	two.innerHTML= "Cured: "+totalCured;
+	document.body.appendChild(two);
+	
+	three.innerHTML= "Deceased: "+totalDeceased;
+	document.body.appendChild(three);
+	
+	console.log("done");
+
+
+	// console.log(tc,totalCase,td,totalDeceased,cc,totalCured);
 }
