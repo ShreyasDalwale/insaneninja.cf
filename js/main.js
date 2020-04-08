@@ -52,9 +52,9 @@ function onLoad() {
 
 }
 function postAction(data) {
-	var tc = document.getElementById("totalCases").innerText;
-	var td = document.getElementById("totalD").innerText;
-	var cc = document.getElementById("totalC").innerText;
+	var tc = document.getElementById("totalCases").innerHTML;
+	var td = document.getElementById("totalD").innerHTML;
+	var cc = document.getElementById("totalC").innerHTML;
 	var states = [	'andaman and nicobar islands','andhra pradesh',
 					'arunachal pradesh','assam','bihar','chandigarh',
 					'chhattisgarh','delhi','goa','gujarat','haryana',
