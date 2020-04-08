@@ -3,7 +3,8 @@ function onLoad() {
 	console.log(p);
 	
 
-	var myUrl = 'http://www.geoplugin.net/json.gp?ip=216.58.209.68';
+	// var myUrl = 'http://www.geoplugin.net/json.gp?ip=216.58.209.68';
+	var myUrl = 'https://ghoapi.azureedge.net/api';
 	
 	var proxy = 'https://cors-anywhere.herokuapp.com/';
 	
